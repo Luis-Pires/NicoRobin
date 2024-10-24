@@ -13,10 +13,12 @@ body {
              
 }
 
+
 /* Barra de navegação */
 header nav.nav-transparent { 
     background: rgba(0,0,0,0.6);
     padding: 15px;
+    backdrop-filter: blur(1px);
 } 
 
 .navbar-brand:hover {
@@ -104,6 +106,18 @@ h1.world, .archeologist  {
 }
 
 /* Secção Segundo */
+
+/* Extra small devices (phones, 600px and down)*/ 
+@media only screen and (max-width: 770px) {
+    #list-tab {
+        align-items: center;
+    }
+    #stomp-list, #list-double-clutch-list, #list-wing-list, #list-karate-list, #list-gigant-list, #list-demon-list, #list-demon-clutch-list, #list-smile-list, #powers-exp, #powers {
+        text-align: center;
+        align-items: center;
+    }
+}
+
 .segundo {
     padding-bottom: 25px;
     background: white;
@@ -303,6 +317,12 @@ h1.world, .archeologist  {
 }
 
 /*Secção Quarto*/
+
+/* Extra small devices (phones, 600px and down)*/ 
+@media only screen and (max-width: 770px) {
+    
+}
+
 .overlay {
     background: white;
     height: 700px;
@@ -445,6 +465,7 @@ h1.world, .archeologist  {
     height: 500px;
     z-index: 1;
     position: absolute;
+    backdrop-filter: blur(6px);
 }
 
 .quinto .col-md-3:hover .descricao {
